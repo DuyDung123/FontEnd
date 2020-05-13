@@ -17,8 +17,8 @@ export class InfoColorComponent implements OnInit {
 
   customColor() {
     return{
-    'background-color': this.arryColor[0],
-    color: this.arryColor[1]
+      'background-color': this.arryColor[2] ? this.arryColor[0] : '',
+      color: this.arryColor[2] ? this.arryColor[1] : ''
     };
   }
   constructor() { }

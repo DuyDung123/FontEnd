@@ -11,7 +11,7 @@ export class AppComponent {
   // tslint:disable-next-line: ban-types
   colorList: String[] = ['Red', 'Blue', 'Orange', 'Custom'];
   // tslint:disable-next-line: ban-types
-  color: String[] = ['', ''];
+  color: any[] = ['', '', false];
   // tslint:disable-next-line: ban-types
   colorInputCustom: String[] = ['#808040', '#ffffff'];
   // tslint:disable-next-line: ban-types
@@ -19,7 +19,12 @@ export class AppComponent {
 
   changeColor(theme) {
     this.textColor = theme;
-    console.log(theme);
+    if (theme === this.colorList[3]) {
+      this.color[2] = true;
+    } else {
+      this.color[2] = false;
+    }
+    console.log(this.color);
   }
   changeTextColor(event) {
     console.log(event.target.value);
