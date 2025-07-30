@@ -1,0 +1,31 @@
+.slide-custom {
+    /* width:alc(100% - 500px); */
+    width: 500px;
+    margin: auto;
+}
+.carousel-item img {
+    width: 500px;
+    height: 500px;
+}
+
+.slide-custom .carousel-indicators {
+    visibility: hidden;
+}
+
+.khung {
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    background-image: url(s1.jpg);
+    background-size: 800px 400px;
+    color: white;
+    font-size: 33px;
+    /* text-align: center; /*căn giữa chiều ngang cách 1*/ 
+    display: flex;
+    justify-content: center; /*căn giữa chiều ngang cách 2 cần có display: flex;*/
+    align-items: center;  /*căn giữa chiều dọc cần có display: flex;*/
+}
+
+.khung .noidung {
+    
+}

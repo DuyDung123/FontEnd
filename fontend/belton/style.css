@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-family1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-family2: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --line-height1: 59px;
+    --line-height1: 59px;
+    --font-size1: 48px;
+    --font-size2: 16px;
+    --color2: #666;
+}
+
+.banner_top {
+    background: url(s1.jpg) top center;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed; /* đính back background cố định khi scroll*/
+}
+
+.banner_top::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.418); */
+    background-image: -webkit-linear-gradient(left, black 0%, #00000000 50%, black 100%);
+}
+
+.banner_top ._3cot {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+.banner_top ._3cot ._1cot {
+    width: 33.33%;
+}
+
+.banner_top ._3cot ._1cot.cottrai {}
+
+.banner_top ._3cot ._1cot.cottrai a {
+    font-size: 25px;
+    color: white;
+    padding: 20px 30px;
+}
+
+.banner_top ._3cot ._1cot.cottrai a:hover {
+    color: #0345bf;
+}
+
+.banner_top ._3cot ._1cot.cotgiua {
+    text-align: center;
+}
+
+
+.banner_top ._3cot ._1cot.cotgiua a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.banner_top ._3cot ._1cot.cotphai {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.banner_top ._3cot ._1cot.cotphai a {
+    color: white;
+    font-size: 14px;
+    padding: 15px 5px;
+    display: inline-block;
+}
+
+/* start text_banner */
+.text_banner {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    color: white;
+}
+
+.text_banner .content {
+    width: 1170px;
+    margin: auto;
+}
+
+.text_banner .content .small {
+    font-size: 15px;
+}
+
+.text_banner .content h1 {
+    font-family: var(--font-family1);
+    font-size: var(--font-size1);
+    line-height: var(--line-height1);
+    color: white;
+    width: 70%;
+}
+
+/* end css top */
+
+.content1 {
+    width: 1170px;
+    margin: auto;
+    padding: 80px 0;
+    display: flex;
+    font-family: var(--font-family2);
+    font-size: var(--font-size2);
+    color: var(--color2);
+
+}
+
+.content1 .left {
+    width: 35%;
+}
+
+.content1 .left span {}
+
+.content1 .left h2 {
+    font-family: var(--font-family1);
+}
+
+.content1 .right {
+    width: 65%;
+}
+
+.content1 .right p {
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.content1 .right p {
+}
+
+.content1 .right p::before {
+    content: '\f178';
+    font: normal normal normal 14px/1 FontAwesome;
+    position: relative;
+    left: -10px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.content1 .right p:hover::before {
+    left: 0px;
+    opacity: 1;
+}

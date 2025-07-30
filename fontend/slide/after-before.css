@@ -1,0 +1,50 @@
+a.chu {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+a.chu span {}
+
+a.chu div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: yellowgreen;
+    transition: 0.4s;
+}
+
+a.chu:hover div {
+    width: 100%;
+}
+
+
+a.chu-after {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+a.chu-after::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: yellowgreen;
+    transition: 1.4s;
+}
+
+a.chu-after:hover::after {
+    width: 100%;
+    transition: 0.1s; /* transition 2 chieu */
+}

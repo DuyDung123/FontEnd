@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+}
+.themeforest {
+    background: url(s1.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.themeforest ul {
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.themeforest ul li {
+    padding-bottom: 5px;
+    transition: 0.4s;
+}
+
+.themeforest ul li a {
+    text-decoration: none;
+}
+
+.themeforest ul li .icon {
+    display: inline;
+    color: rgb(72, 30, 189);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.themeforest ul li:hover .icon {
+    opacity: 1;
+}
+
+.themeforest ul li:hover {
+    margin-left: 20px;
+}
+
+.themeforest ul li .chu {
+    display: inline;
+}
